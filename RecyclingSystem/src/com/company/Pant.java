@@ -43,18 +43,17 @@ public class Pant {
             } else if (pant.type.equals("PantC")) {
                 counterC++;
             }
-
             number++;
 
             total += pant.price;
         }
 
+        System.out.println();
         System.out.println("\"-------------------------------------------------\"");
         System.out.println("|                                                 |");
         System.out.println("| =============================================== |");
         System.out.println("|             M Å S K E R E C Y C L I N G         |");
         System.out.println("| =============================================== |");
-
         System.out.println(String.format("%-50s%s", "|  Pant A: " + counterA + "x = " + counterA * 1 + " DKK.", "|"));
         System.out.println(String.format("%-50s%s", "|  Pant B: " + counterB + "x = " + counterB * 1.5 + " DKK.", "|"));
         System.out.println(String.format("%-50s%s", "|  Pant C: " + counterC + "x = " + counterC * 3 + " DKK.", "|"));
@@ -62,5 +61,6 @@ public class Pant {
         System.out.println(String.format("%-50s%s", "|", "|"));
         System.out.println(String.format("%-50s%s", "|  Total amount: " + total + " DKK.", "|"));
         System.out.println("\"-------------------------------------------------\"");
+        System.out.println();
     }
 }
