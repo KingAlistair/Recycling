@@ -23,14 +23,14 @@ public class Menu {
 
             //Gets user input/ scan if container is a bottle.
             System.out.println("Is it a bottle?");
-            boolean isItBootle = userBoolean();
+            boolean isItBottle = userBoolean();
 
             //Get user input for size/ litre of container.
             System.out.println("How many liters?");
             double size = userDouble();
 
             //Create container object from parameters.
-            Container container = new Container(isItPlastic, isItBootle, size);
+            Container container = new Container(isItPlastic, isItBottle, size);
 
             //Scans container, returns Pant type object, add it to List.
             pantList.add(container.scanItems());
@@ -46,7 +46,7 @@ public class Menu {
 
         //After last scan, print recipe, reset/restart program.
         Pant.printReceipt(pantList);
-            start();
+        start();
     }
 
     //Reads user String input and returns a boolean it
