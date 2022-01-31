@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-
 public class Container {
     boolean isItBottle;
     boolean isItPlastic;
@@ -13,30 +11,7 @@ public class Container {
         this.size = size;
     }
 
-    public boolean isItBottle() {
-        return isItBottle;
-    }
-
-    public void setItBottle(boolean itBottle) {
-        isItBottle = itBottle;
-    }
-
-    public boolean isItPlastic() {
-        return isItPlastic;
-    }
-
-    public void setItPlastic(boolean itPlastic) {
-        isItPlastic = itPlastic;
-    }
-
-    public double getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
+    //Scan individual containers and returns correct Pant object.
     public Pant scanItems() {
 
         Pant pantA = new Pant(1,"PantA");
@@ -55,5 +30,4 @@ public class Container {
            return pantA;
         }
     }
-
 }

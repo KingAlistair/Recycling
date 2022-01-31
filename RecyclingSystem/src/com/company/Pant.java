@@ -11,22 +11,7 @@ public class Pant {
         this.type = type;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
+    //Print out receipt
     public static void printReceipt(ArrayList<Pant> pantList) {
         double total = 0;
         int number = 0;
